@@ -161,6 +161,7 @@ public class RentalPOSTests {
         final RentalAgreement rentalAgreement =
                 this.rentalPos.checkout("JAKD", LocalDate.of(2024,6, 28),
                         6,0);
+
         assertEquals(BigDecimal.valueOf(8.97), rentalAgreement.preDiscountCharge());
     }
 
